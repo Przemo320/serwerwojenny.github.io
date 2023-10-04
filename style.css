@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+.reklama{
+    background-color: green;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    width: 100%;
+    height: auto;
+}
+
+.baner{
+    position: sticky;
+    top: 0;
+    background-color: gray;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.baner2{
+    display: flex;
+    flex-direction: row;
+    min-height: 90vh;
+    overflow-x: hidden;
+    background-color: rgb(182, 182, 182);
+}
+
+.panel{
+    z-index: 1;
+    min-width: 250px;
+    padding: 15px;
+    background-color: rgb(154, 154, 154);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.panel>div{
+    max-width: 300px;
+}
+
+ul{
+    padding-top: 20px;
+    list-style: none;
+    padding-bottom: 50px;
+}
+
+li{
+    margin-top: 10px;
+}
+
+.nie1, .ros1, .usa1, .bry1, .fra1,.chi1,.jap1,.kor1,.syr1{
+    display: none;
+}
+
+.click{
+    margin-top: 10px;
+    display: flex;
+    background-color: gray;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: auto;
+}
+
+.menuZwi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nie2, .ros2, .usa2, .bry2, .fra2,.chi2,.jap2,.kor2,.syr2{
+    margin-left: 20px;
+    transform: rotate(0deg);
+    transition-duration: 1s;
+}
+
+.click2{
+    transform: rotate(90deg);
+    transition-duration: 1s;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 970px){
+    .panel{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 5vw;
+    }
+    .panel>div:first-child{
+        padding-right: 50px;
+    }
+    .baner2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kraje>div>div>img{
+        width: 50vw !important;
+    }
+
+    .kraje>div{
+        width: 85vw !important;
+    }
+
+    .kraje>div .kraje5>div{
+        width: 80vw !important;
+    }
+
+    .kraje2>div{
+        width: auto !important;
+    }
+    
+    .kraje2>div>div>img{
+        width: 50vw !important;
+    }
+
+    .kraje3>img{
+        width: 90vw !important;
+    }
+    .kraje4>div>div>.czolg{
+        width: 50vw !important;
+    }
+    .kraje4>div>div>img{
+        width: 30vw !important;
+    }
+    .panel>div{
+        width: 95vw !important;
+    }
+    .kraje5>div>div{
+        width: 80vw !important; 
+    }
+}
+
+.panel2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(182, 182, 182);
+}
+
+.kraje2>div>div>img{
+    width: 370px;
+}
+
+.kraje>div>div>img{
+    width: 300px;
+}
+
+.kraje5>div>div>img{
+    width: 400px;
+}
+
+.kraje3{
+    width: auto;
+}
+
+.kraje4>div>div>.czolg{
+    width: 400px;
+}
+
+.kraje4>div>div>img{
+    width: 200px;
+}
+
+.kraje3>img{
+    width: 70vw;
+}
+
+.kraje2>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 700px;
+}
+
+.kraje4>div{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.kraje5>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: 20px;
+    text-align: center;
+}
+
+.kraje>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+.kraje>div>div , .kraje2>div>div, .kraje4>div>div{
+    padding-top: 30px !important;
+    padding: 10px;
+}
+
+.kraje, .kraje5{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+}
+
+
+.kraje2{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+}
+
+.kraje4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.stopka{
+    background-color: gray;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar{
+    background-color: gray;
+    width: 12px;
+}
+
+::-webkit-scrollbar-button{
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(82, 82, 82);
+    border-radius: 50px;
+}
